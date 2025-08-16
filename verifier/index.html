@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link rel="manifest" href="./manifest.webmanifest"/>
+  <link rel="stylesheet" href="./style.css"/>
+  <title>OQRP Verifier</title>
+</head>
+<body>
+  <main>
+    <h1>OQRP Verifier</h1>
+    <p>Вставьте токен (JWS) или отсканируйте QR со строкой токена.</p>
+    <textarea id="token" placeholder="eyJhbGciOiJFZERTQSIsInR5cCI6Ik9RUlAiLCJraWQiOiJkZXYta2V5LTEifQ...."></textarea>
+    <input id="issuer" placeholder="http://localhost:8000" />
+    <button id="verify">Проверить</button>
+    <div id="result" class="neutral">Ожидание…</div>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "OQRP Verifier",
+  "short_name": "OQRP",
+  "start_url": "/verifier/index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#0bb",
+  "icons": []
+}
