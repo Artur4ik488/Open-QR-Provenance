@@ -1,0 +1,8 @@
+name: SBOM
+on: [push, workflow_dispatch]
+jobs:
+  bom:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install cyclonedx-bom && cyclonedx-py -o sbom-python.xml || true
